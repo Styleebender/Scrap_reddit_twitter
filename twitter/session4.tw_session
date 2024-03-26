@@ -1,0 +1,46 @@
+{
+    "cookies": "kdt=q9GwFsOaiOlcoFomkACx7mKfQPehGqzERr7iYWAG;twid=\"u=1769639707237834752\";ct0=e7b5b4921f523a1ce4631b32427bb55c;auth_token=d334e34da56506dd947ff9eae6c16e84a97c301c;",
+    "user": {
+        "id": "1769639707237834752",
+        "rest_id": "1769639707237834752",
+        "created_at": "2024-03-18 08:19:29+00:00",
+        "date": "2024-03-18 08:19:29+00:00",
+        "entities": {
+            "description": {
+                "urls": []
+            }
+        },
+        "description": null,
+        "bio": null,
+        "fast_followers_count": "0",
+        "favourites_count": "0",
+        "followers_count": "0",
+        "friends_count": "10",
+        "has_custom_timelines": "False",
+        "is_translator": "False",
+        "listed_count": "0",
+        "location": null,
+        "media_count": "0",
+        "name": "britt simar",
+        "normal_followers_count": "0",
+        "subscriptions_count": "0",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_interstitial_type": null,
+        "protected": "False",
+        "screen_name": "britt_simar",
+        "username": "britt_simar",
+        "statuses_count": "0",
+        "translator_type": "none",
+        "verified": "False",
+        "can_dm": "True",
+        "following": "False",
+        "community_role": null,
+        "notifications_enabled": "False",
+        "notifications": "False",
+        "possibly_sensitive": "False",
+        "pinned_tweets": null,
+        "profile_url": "https://twitter.com/britt_simar",
+        "is_blocked": "False"
+    }
+}

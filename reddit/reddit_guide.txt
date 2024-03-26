@@ -1,0 +1,182 @@
+https://praw.readthedocs.io/en/stable/getting_started/quick_start.html
+
+
+query for search
+https://old.reddit.com/search?q=test%to%video&sort=relevance&type=post&t=all
+
+https://old.reddit.com/search?q=test%25to%25video&sort=relevance&type=post&t=all&count=22&after=t3_17rsnop
+
+eg: https://www.reddit.com/search?q=test&sort=relevance&type=post&t=all
+
+Sort: relevance, hot, top, new, comments
+
+t: 	hour, day, week, month, year, all
+
+type: posts, comments, communities, people
+
+limit: 
+
+after
+
+&after=t3_19boado
+
+
+&include_over_18=1&type=comment
+
+---------------------------------------------
+GEt subreddit  attributes
+
+display_name: The name of the subreddit.
+title: The title of the subreddit.
+description: The description of the subreddit.
+created_utc: The time the subreddit was created, in Unix Time.
+subscribers: The number of subscribers to the subreddit.
+over18: Whether the subreddit is for over 18s only.
+public_description: A brief public description of the subreddit.
+spoilers_enabled: Whether spoilers are enabled on the subreddit.
+header_title: 
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------
+Common user attributes:
+
+title: The title of the post.
+author: The author (Redditor) of the post.
+url: The URL of the post.
+id: The unique identifier of the post.
+score: The score of the post (upvotes minus downvotes).
+num_comments: The number of comments on the post.
+created_utc: The time the post was created in UTC (Unix timestamp).
+selftext: The text content of a self-post (text post).
+permalink: The permalink of the post.
+is_self: A boolean indicating whether the post is a self-post or a link post.
+subreddit: The subreddit where the post was submitted.
+subreddit_name_prefixed: The name of the subreddit with the "/r/" prefix.
+link_flair_text: The text of the post's link flair, if present.
+link_flair_css_class: The CSS class of the post's link flair, if present.
+is_video: A boolean indicating whether the post contains a video.
+media: Information about the media content of the post (if applicable).
+
+
+These are some of the most commonly accessed attributes, but there are many more available depending on the specific needs of your project. You can access any of these attributes using dot notation on the submission object. For example, submission.title, submission.author, submission.url, etc.
+
+
+------------------------------------------------------
+
+All the attributes that reddit provides
+
+approved_at_utc
+approved_by
+archived
+author
+author_flair_background_color
+author_flair_css_class
+author_flair_richtext
+author_flair_template_id
+author_flair_text
+author_flair_text_color
+author_flair_type
+author_fullname
+author_patreon_flair
+author_premium
+awarders
+banned_at_utc
+banned_by
+can_gild
+can_mod_post
+category
+clicked
+comment_limit
+comment_sort
+content_categories
+contest_mode
+created
+created_utc
+crosspost
+crosspost_parent
+crosspost_parent_list
+discussion_type
+distinguished
+domain
+downs
+edited
+gilded
+gildings
+hidden
+hide_score
+id
+is_crosspostable
+is_meta
+is_original_content
+is_reddit_media_domain
+is_robot_indexable
+is_self
+is_video
+likes
+link_flair_background_color
+link_flair_css_class
+link_flair_richtext
+link_flair_template_id
+link_flair_text
+link_flair_text_color
+link_flair_type
+locked
+media
+media_embed
+media_only
+mod_note
+mod_reason_by
+mod_reason_title
+mod_reports
+name
+no_follow
+num_comments
+num_crossposts
+num_reports
+over_18
+parent_whitelist_status
+permalink
+pinned
+pwls
+quarantine
+removal_reason
+removed_by
+removed_by_category
+report_reasons
+saved
+score
+secure_media
+secure_media_embed
+selftext
+selftext_html
+send_replies
+spoiler
+stickied
+subreddit
+subreddit_id
+subreddit_name_prefixed
+subreddit_subscribers
+subreddit_type
+suggested_sort
+thumbnail
+thumbnail_height
+thumbnail_width
+title
+total_awards_received
+ups
+url
+user_reports
+view_count
+visited
+whitelist_status
+wls

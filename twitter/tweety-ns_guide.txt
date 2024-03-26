@@ -1,0 +1,202 @@
+Twitter().search(keyword: str, pages: int = 1, filter_: str = None, wait_time: int = 2, cursor: str = None)
+
+filter_=SearchFilters.Latest()
+
+logins:
+
+1st:
+email: tobenna.ephrem@marsoak.com
+username: tob_12345
+password: Gpk@12345
+sessions: session2
+
+2nd:
+email: suhaib.sirr@marsoak.com
+username: SuhaibSirr
+password: Gpk@12345
+sessions: session3
+
+3rd:
+email: britt.simar@marsoak.com
+username: britt_simar
+password: Gpk@12345
+sessions: session4
+
+[
+    {'username': 'tob_12345', 'password': 'Gpk@12345', 'session_details': 'session2', 'current_status': 'occupied','human_action':'No'},
+    
+    {'username': 'SuhaibSirr', 'password': 'Gpk@12345', 'session_details': 'session3', 'current_status': 'free','human_action':'No'},
+
+    {'username': 'britt_simar', 'password': 'Gpk@12345', 'session_details': 'session4', 'current_status': 'free','human_action':'No'},
+]
+
+
+tweety.exceptions_.InvalidCredentials:  Wrong password!
+
+
+tweety.exceptions_.TwitterError: Rate limit exceeded
+
+*Modification done on tweety-ns library:
+    def perform_search(self, keyword, cursor, filter_):
+        if keyword.startswith("#"):
+            keyword = f"%23{keyword[1:]}"
+
+        keyword = quote(keyword, safe="()%")
+        keyword = f'"{keyword}"'
+        request_data = self.__builder.search(keyword, cursor, filter_)
+        response = self.__get_response__(**request_data)
+        return response
+
+
+Tweet Attributes commonly used:
+id: int
+created_on: datetime.datetime
+text: str
+author: User
+
+is_retweet: bool
+Is this Tweet a retweet or not
+
+is_reply: bool
+Is this Tweet replied in response of any other Tweet
+
+reply_counts: int
+Number of Times someone replied to this Tweet
+
+views: int
+Number of Times this Tweet was Viewed
+
+source: str
+Source of Tweet
+
+url: str
+URL of the Tweet
+
+
+
+
+Tweet Attributes ALL:
+
+id: int
+ID of the Tweet
+
+created_on: datetime.datetime
+DateTime at which the Tweet was created
+
+date: datetime.datetime
+DateTime at which the Tweet was created
+
+text: str
+Text of the Tweet
+
+rich_text: RichText
+Text of the Tweet
+
+author: User
+Author of the Tweet
+
+is_retweet: bool
+Is this Tweet a retweet or not
+
+retweeted_tweet: Tweet
+Retweeted Tweet if is_retweet is True
+
+is_quoted: bool
+Is the Tweet quoted or not
+
+quoted_tweet: Tweet
+Quoted Tweet if is_quoted is True
+
+is_reply: bool
+Is this Tweet replied in response of any other Tweet
+
+is_sensitive: bool
+Does the Tweet contain sensitive content
+
+reply_counts: int
+Number of Times someone replied to this Tweet
+
+quote_counts: int
+Number of Times this Tweet was Quoted
+
+replied_to: Tweet | str
+Tweet this Tweet was sent in response to or USER ID
+
+bookmark_count: int
+Number of Times this Tweet was Bookmarked
+
+views: int
+Number of Times this Tweet was Viewed
+
+likes: int
+Number of Times this Tweet was Liked
+
+language: str
+Language of the Tweet (identified by Twitter)
+
+place: Place
+Any Place mentioned in the Tweet
+
+retweet_counts: int
+Number of Times this Tweet was Retweeted
+
+source: str
+Source of Tweet
+
+has_moderated_replies: bool
+Are replies on this Tweet moderated
+
+is_liked: bool
+is this tweet liked by authenticated user
+
+is_retweeted: bool
+is this tweet retweeted by authenticated user
+
+can_reply: bool
+can authenticated user reply to this Tweet
+
+broadcast: Broadcast | None
+Broadcast
+
+edit_control: EditControl | None
+Edit Control of the Tweet
+
+has_newer_version: bool
+Do this Tweet was edited and has newer version
+
+audio_space_id: str
+Id of the Audio Space in the Tweet
+
+pool: Pool | None
+Pool in the Tweet
+
+community: Community | None
+Community this tweet is part of
+
+media: list[Media]
+Media of the Tweet
+
+user_mentions: list[ShortUser]
+Users mentioned in the Tweet
+
+urls: list[URL]
+URLs mentioned in the Tweet
+
+hashtags: list[Hashtag]
+Hashtags mentioned in the Tweet
+
+symbols: list[Symbol]
+Symbols mentioned in the Tweet
+
+community_note: str | None
+Community Note posted in response to the Tweet
+
+url: str
+URL of the Tweet
+
+threads: list[Tweet]
+List of Threaded Tweets
+
+comments: list[ConversationThread]
+List of Comments sent in response to this Tweet
+

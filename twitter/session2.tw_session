@@ -1,0 +1,46 @@
+{
+    "cookies": "auth_token=fddd8af7c216ebf8fd9d52a4b3a24ba3926f3726;ct0=46dbaed487341e7a3660aac317e8b28555531016eafb1cecfef4b3b987357005ad66a11d92556f17bfe15c9014d5e77b167d513c4b6be8e510794bac56266bad8140ec155f647bab096aea669d1fd400;",
+    "user": {
+        "id": "1761744774124466176",
+        "rest_id": "1761744774124466176",
+        "created_at": "2024-02-25 13:28:07+00:00",
+        "date": "2024-02-25 13:28:07+00:00",
+        "entities": {
+            "description": {
+                "urls": []
+            }
+        },
+        "description": null,
+        "bio": null,
+        "fast_followers_count": "0",
+        "favourites_count": "0",
+        "followers_count": "0",
+        "friends_count": "7",
+        "has_custom_timelines": "False",
+        "is_translator": "False",
+        "listed_count": "0",
+        "location": null,
+        "media_count": "0",
+        "name": "tobenna",
+        "normal_followers_count": "0",
+        "subscriptions_count": "0",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_interstitial_type": null,
+        "protected": "False",
+        "screen_name": "tob_12345",
+        "username": "tob_12345",
+        "statuses_count": "0",
+        "translator_type": "none",
+        "verified": "False",
+        "can_dm": "True",
+        "following": "False",
+        "community_role": null,
+        "notifications_enabled": "False",
+        "notifications": "False",
+        "possibly_sensitive": "False",
+        "pinned_tweets": null,
+        "profile_url": "https://twitter.com/tob_12345",
+        "is_blocked": "False"
+    }
+}
