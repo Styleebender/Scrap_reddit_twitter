@@ -27,20 +27,13 @@ for index, row in df.iterrows():
     tweet_words = word_tokenize(row['text'])
     if any(word in tweet_words for word in product_words):
         # Categorize the tweet based on its compound sentiment score
-        print("tweet",row['text'])
-        print("------------------------------------------------------")
-        print("score",sentiment_scores['compound'])
         if sentiment_scores['compound'] > 0.05:
-            print("-----highly-----")
             relevance = 'highly relevant'
         elif sentiment_scores['compound'] < -0.05:
-            print("-----less-----")
             relevance = 'less relevant'
         else:
-            print("neutral")
             relevance = 'neutral'
     else:
-        print("not relevant")
         relevance = 'not relevant'
     
     # Update the 'relevance' column
