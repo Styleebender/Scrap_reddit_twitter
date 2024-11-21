@@ -1,2 +1,2 @@
-# Scrap_reddit_twiiter
- Script for scrapping data from reddit and twiiter in large number as per keywords
+# Scrap_reddit_twitter
+Script for extracting large volumes of data from Reddit and Twitter based on specific keywords.
